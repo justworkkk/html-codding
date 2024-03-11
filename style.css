@@ -60,7 +60,7 @@ header {
 }
 
 .sofa_consultant_container img {
-	max-width: 50vw;
+	max-width: 50%;
 	margin-top: 50px;
 }
 
@@ -71,9 +71,12 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	left: -150px;
-	bottom: -25px;
+	position: absolute;
+	/* left: -150px;
+	bottom: -25px; */
+	max-width: 100%;
+	right: 50px;
+	bottom: 90px;
 	padding: 2.5rem 10rem 2.5rem 10rem;
 }
 .get_personalised {
@@ -136,11 +139,14 @@ section.steps {
 }
 
 .step-wrap {
-	position: relative;
-	right: -290px;
+	position: absolute;
+	/* right: -290px; */
 	background: #ffffffd1;
 	z-index: 1;
 	padding: 6.25rem 9.375rem 6.25rem 9.375rem;
+}
+section.steps img {
+	max-width: 100%;
 }
 
 .make_dream {
@@ -182,7 +188,7 @@ h3.what-we-do {
 .what-part {
 	width: fit-content;
 	display: flex;
-	gap: 80px;
+	gap: 50px;
 }
 
 .what-item {
@@ -222,6 +228,8 @@ section.project {
 }
 
 .collage-container {
+	max-width: 100%;
+	position: relative;
 	display: flex;
 	align-items: flex-start;
 	gap: 20px;
@@ -514,6 +522,15 @@ footer {
 	justify-content: space-between;
 }
 
+@media screen and (max-width: 1400px) {
+	.what-container {
+		gap: 20px;
+	}
+	.what-part {
+		gap: 20px;
+	}
+}
+
 @media screen and (min-width: 480px) and (max-width: 960px) {
 	.hide {
 		display: block;
@@ -712,13 +729,12 @@ footer {
 	.get-a-wrap a {
 		font-size: calc(16px + 8 * (100vw / 960));
 	}
-	.companies-icon-item {
+	.logos-icon-item {
 		border: 2px solid #ffffffb0;
 	}
-	.companies-icon-container {
+	.logos-icon-container {
 		margin-top: 0;
 		display: flex;
-		flex-direction: row;
 		gap: 2rem;
 	}
 }

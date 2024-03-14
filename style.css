@@ -140,7 +140,6 @@ section.steps {
 
 .step-wrap {
 	position: absolute;
-	/* right: -290px; */
 	background: #ffffffd1;
 	z-index: 1;
 	padding: 6.25rem 9.375rem 6.25rem 9.375rem;
@@ -378,8 +377,7 @@ section.costumers h3 {
 .costumers-container {
 	margin-top: 50px;
 	display: flex;
-	flex-direction: row;
-	gap: 110px;
+	justify-content: center;
 }
 .img_opacity {
 	opacity: 37%;
@@ -546,6 +544,17 @@ footer {
 	}
 	.costumers-container {
 		justify-content: center;
+	}
+	.project-container {
+		justify-content: center;
+		align-items: center;
+	}
+	.view-all-container {
+		white-space: wrap;
+		padding: 25px 50px 25px 50px;
+	}
+	footer {
+		padding: 50px 25px 50px 100px;
 	}
 }
 
